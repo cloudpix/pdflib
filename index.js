@@ -1,13 +1,9 @@
 'use strict';
 
-import pdfFont from 'pdfmake/build/vfs_fonts';
-import pdfMake from 'pdfmake/build/pdfmake';
+const pdfFont = require('pdfmake/build/vfs_fonts');
+const pdfMake = require('pdfmake/build/pdfmake');
 
-export const pdflib = {};
-
-function setup() {
-  pdflib.vfs = pdfFont.pdfMake.vfs;
-  pdflib.createPdf = pdfMake.createPdf;
-}
-
-setup();
+module.exports = {
+  vfs: pdfFont.pdfMake.vfs,
+  createPdf: pdfMake.createPdf
+};
