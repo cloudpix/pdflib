@@ -1,6 +1,6 @@
 {
   "name": "pdflib",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Shortcut for pdfMake",
   "main": "index.js",
   "scripts": {
